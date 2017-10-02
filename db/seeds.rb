@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Location.delete_all
+User.delete_all
+Quest.delete_all
+Hunt.delete_all
+
 Location.create([
 {name: "Bank of America Tower", latitude: 40.755604, longitude: -73.984932},
 {name: "Federation Tower", latitude: 55.749695, longitude: 37.537540},
@@ -18,3 +23,20 @@ Location.create([
 {name: "Naval Observatory Flagstaff", latitude: 35.184017, longitude: -111.740417},
 {name: "Botanical Research Institute of Texas", latitude: 32.742027, longitude: -97.362564}
 ])
+
+User.create([
+  {username: "Marlon", password: "123"},
+  {username: "David", password: "123"}
+  ])
+
+Quest.create([
+  {user_id: 1, location_id: 1, prize: 12},
+  {user_id: 1, location_id: 2, prize: 20},
+  {user_id: 2, location_id: 1, prize: 10},
+  {user_id: 2, location_id: 3, prize: 10}
+  ])
+
+Hunt.create([
+  {user_id: 2, quest_id: 1},
+  {user_id: 1, quest_id: 3}
+  ])
