@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :locations, only: [:index, :create]
       resources :quests, only: [:index, :create]
       resources :users, only: [:show, :create]
+      resources :user_locations, only: [:show, :create]
     end
   end
 end
