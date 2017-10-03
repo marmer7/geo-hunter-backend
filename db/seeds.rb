@@ -30,10 +30,10 @@ User.create([
   ])
 
 Quest.create([
-  {user_id: 1, location_id: 1, prize: 12},
-  {user_id: 1, location_id: 2, prize: 20},
-  {user_id: 2, location_id: 1, prize: 10},
-  {user_id: 2, location_id: 3, prize: 10}
+  {name: "Temple of Doom", user_id: 1, location_id: 1, prize: 12},
+  {name: "FlatIron Quest", user_id: 1, location_id: 2, prize: 20},
+  {name: "Rake Db DROP!!!", user_id: 2, location_id: 1, prize: 10},
+  {name: "Marlon and Davids Adventure", user_id: 2, location_id: 3, prize: 10}
   ])
 
 Hunt.create([

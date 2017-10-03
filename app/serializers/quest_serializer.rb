@@ -1,5 +1,5 @@
 class QuestSerializer < ActiveModel::Serializer
-  attributes :id, :prize
+  attributes :id, :name, :prize
   has_one :location
   has_one :user
 end
