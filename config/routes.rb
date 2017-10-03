@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :locations, only: [:index, :create]
       resources :quests, only: [:index, :create]
+      resources :users, only: [:show, :create]
     end
   end
 end
