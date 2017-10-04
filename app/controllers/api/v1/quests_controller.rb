@@ -11,6 +11,6 @@ class Api::V1::QuestsController < ApplicationController
 
   private
   def quest_params
-    params.permit(:body)
+    params.permit(:name, :user_id, :latitude, :longitude)
   end
 end
