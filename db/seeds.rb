@@ -11,6 +11,7 @@ User.delete_all
 Quest.delete_all
 Hunt.delete_all
 
+
 Location.create([
 {name: "Bank of America Tower", latitude: 40.755604, longitude: -73.984932},
 {name: "Federation Tower", latitude: 55.749695, longitude: 37.537540},
