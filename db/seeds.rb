@@ -25,8 +25,8 @@ Location.create([
 ])
 
 User.create([
-  {username: "Marlon", password: "123"},
-  {username: "David", password: "123"}
+  {username: "Marlon", password: "123", points: 450},
+  {username: "David", password: "123", points: 104628}
   ])
 
 Quest.create([
