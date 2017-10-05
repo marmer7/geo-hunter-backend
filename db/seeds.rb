@@ -31,13 +31,8 @@ User.create([
   ])
 
 Quest.create([
-  {name: "Temple of Doom", user_id: 1, location_id: 1, prize: 12},
-  {name: "FlatIron Quest", user_id: 1, location_id: 1, prize: 20},
-  {name: "Rake Db DROP!!!", user_id: 2, location_id: 8, prize: 10},
-  {name: "Marlon and Davids Adventure", user_id: 2, location_id: 8, prize: 10}
-  ])
-
-Hunt.create([
-  {user_id: 2, quest_id: 1},
-  {user_id: 1, quest_id: 3}
+  {name: "Temple of Doom", description: "this is a description, this is a description, this is a description, this is a description, this is a description", hint: "this is a hint",user_id: 1, location_id: 1, prize: 12},
+  {name: "FlatIron Quest", description: "this is a description, this is a description, this is a description, this is a description, this is a description", hint: "this is a hint",user_id: 1, location_id: 1, prize: 20},
+  {name: "Rake Db DROP!!!", description: "this is a description, this is a description, this is a description, this is a description, this is a description", hint: "this is a hint",user_id: 2, location_id: 8, prize: 10},
+  {name: "Marlon and Davids Adventure", description: "this is a description, this is a description, this is a description, this is a description, this is a description", hint: "this is a hint",user_id: 2, location_id: 8, prize: 10}
   ])

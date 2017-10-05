@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(version: 20171002154601) do
 
   create_table "quests", force: :cascade do |t|
     t.string "name"
+    t.text "description"
+    t.string "hint"
     t.integer "user_id"
     t.integer "location_id"
     t.integer "prize"
