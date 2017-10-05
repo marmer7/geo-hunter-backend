@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :users, only: [:show, :create]
       post '/users/login', to: 'users#login'
       resources :user_locations, only: [:show, :create]
+      resources :hunts, only: [:create]
     end
   end
 end
